@@ -1,0 +1,1 @@
+public interface Registrable { void registerToCourse(Course course); void unregisterFromCourse(Course course); }

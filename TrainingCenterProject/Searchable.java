@@ -1,0 +1,1 @@
+public interface Searchable { boolean matches(int ID); }
