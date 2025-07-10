@@ -1,49 +1,45 @@
-# 🚀 FutureTech Training Centre System – Java OOP Console Application
+# Training Center Management System (Java OOP Console Application)
 
-## 📌 Description
-This is a fully-featured Java console application that simulates the core functionalities of a real-world training center.  
-The system leverages **advanced OOP principles** to manage students, trainers, and courses through a clean and extendable architecture.
+A Java console application for managing a training center using Object-Oriented Programming (OOP) principles.
 
-It’s not just a basic CRUD app — it’s structured for clarity, scalability, and code reusability, making it ideal for showcasing serious Java development skills.
+## Project Structure
 
----
+```
+TrainingCenterProject/
+  tcms/
+    core/         # Main.java, TrainingCentre.java
+    students/     # Student.java
+    trainers/     # Trainer.java
+    courses/      # Course.java
+    persons/      # Person.java
+    interfaces/   # Displayable.java, Registrable.java, Searchable.java
+out/              # Compiled class files
+```
 
-## 💡 Features
+## Compile & Run
 
-- 📋 Add, search, and remove students & courses  
-- 🧠 Register students into courses and view all their enrollments  
-- 🧑‍🏫 Assign trainers to specific courses  
-- 🔎 Search by ID using polymorphic interface  
-- ❌ Delete entities with safe operations  
-- 🧪 Console-based interactive menu
+1. **Compile:**
+   From the project root:
+   ```bash
+   javac TrainingCenterProject/tcms/*/*.java -d out
+   ```
+2. **Run:**
+   From the project root:
+   ```bash
+   java -cp out tcms.core.Main
+   ```
 
----
+## Features
+- Manage students, trainers, and courses.
+- Register students in courses.
+- Display information about the center, students, trainers, and courses.
+- Organized code using professional Java packages.
 
-## 🧠 Object-Oriented Design
-
-| Concept        | Implementation Example                        |
-|----------------|-----------------------------------------------|
-| **Encapsulation** | Private attributes with getters/setters     |
-| **Inheritance**   | `Student` and `Trainer` inherit from `Person` |
-| **Polymorphism**  | `matches()` method from `Searchable` interface |
-| **Abstraction**   | Interfaces: `Displayable`, `Registrable`, etc. |
-
----
-
-## 🛠 Technologies
-
-- Java SE  
-- Console I/O with Scanner  
-- Clean separation between logic and data models  
-- Zero frameworks – pure Java
-
----
-
-## 🧪 Sample Data
-
-- 👨‍🎓 3 Students: Ahmed, Mariam, Omar  
-- 👩‍🏫 2 Trainers: Eng. Yasser (AI), Eng. Rania (Web)  
-- 📚 2 Courses: AI Foundations, Full-Stack Web Development
+## Notes
+- Make sure to run compile and run commands from the project root directory.
+- If you use an IDE (like VS Code or IntelliJ), set the classpath to the `out` directory.
 
 ---
+
+*The project structure has been updated for better maintainability and scalability.*
 

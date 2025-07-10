@@ -1,3 +1,9 @@
+package tcms.core;
+
+import tcms.interfaces.Displayable;
+import tcms.courses.Course;
+import tcms.students.Student;
+import tcms.trainers.Trainer;
 import java.util.ArrayList;
 import java.util.List;
 

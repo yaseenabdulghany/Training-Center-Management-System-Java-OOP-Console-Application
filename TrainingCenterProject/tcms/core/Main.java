@@ -1,3 +1,9 @@
+package tcms.core;
+
+import tcms.students.Student;
+import tcms.trainers.Trainer;
+import tcms.courses.Course;
+import tcms.core.TrainingCentre;
 import java.util.ArrayList;
 import java.util.List;
 public class Main {
